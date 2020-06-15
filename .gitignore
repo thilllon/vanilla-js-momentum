@@ -1,0 +1,6 @@
+WEATHER_API_KEY
+node_modules
+dist
+.cache
+.env
+.parcel-cache
