@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>something</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+  <body>
+    <!-- <img src="./images/1.jpg" alt="1" /> -->
+    <div class="js-clock clock"><h1>--:--</h1></div>
+    <form class="js-form form display-none">
+      <input class="js-input input" type="text" placeholder="What is your name?" />
+    </form>
+    <h4 id="greeting" class="js-greeting greeting display-none">Hola!</h4>
+    <form class="js-toDoForm toDoForm">
+      <input value="" type="text" placeholder="Write things to do" />
+      <ul class="js-toDoList toDoList"></ul>
+      <button id="clearButton" type="button">Clear all</button>
+    </form>
+    <div class="js-weather weather"></div>
+    <script src="./index.js"></script>
+    <script src="./background.js"></script>
+    <script src="./clock.js"></script>
+    <script src="./greeting.js"></script>
+    <script src="./todos.js"></script>
+    <script src="./weather.js"></script>
+  </body>
+</html>

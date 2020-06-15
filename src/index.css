@@ -1,0 +1,211 @@
+:root {
+  --size-height: 50px;
+  --size-margin-weather: 10px;
+  --size-infinite-radius: 9999px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hidden {
+  visibility: hidden;
+}
+body {
+  background-repeat: no-repeat;
+}
+body.__type1 {
+  background-image: url('./images/1.jpg');
+}
+body.__type2 {
+  background-image: url('./images/2.jpg');
+}
+body.__type3 {
+  background-image: url('./images/3.jpg');
+}
+body.__type4 {
+  background-image: url('./images/4.jpg');
+}
+
+.display-none {
+  display: none;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* ************************ */
+body {
+  min-height: 100vh;
+  max-height: 120vh;
+  max-height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  /* ************************ */
+  background-color: transparent;
+  background-size: cover;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* ************************ */
+.clock h1 {
+  text-align: center;
+  margin-top: 3rem;
+}
+.clock h1 .time {
+  font-size: 10rem;
+}
+.clock h1 .date {
+  font-size: 3rem;
+}
+/* ************************ */
+.form .input {
+  background-color: transparent;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: black;
+  color: gray;
+  font-weight: bolder;
+  font-size: 200%;
+  width: 100%;
+  outline: none;
+}
+.form .input::placeholder {
+  color: gray;
+}
+
+/* ************************ */
+.toDoForm input {
+  background-color: transparent;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: black;
+  color: gray;
+  font-weight: bolder;
+  font-size: 200%;
+  width: 100%;
+  outline: none;
+  margin-bottom: 20px;
+}
+.toDoForm input::placeholder {
+  color: gray;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  border: 0px;
+  border-radius: var(--size-infinite-radius);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: var(--size-infinite-radius);
+  border-radius: 10px;
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 1); */
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.toDoForm ul {
+  list-style: none;
+  border: none;
+  padding: 0;
+  margin: 0 0 20px -30px;
+  max-height: 30vh;
+  overflow: hidden auto;
+}
+.toDoList li {
+  height: var(--size-height);
+  max-width: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.toDoList li span {
+  font-weight: bolder;
+  font-size: 120%;
+  color: gray;
+  border-radius: var(--size-infinite-radius);
+  border-width: 2px;
+  border-color: gray;
+  box-sizing: border-box;
+  padding: 5px 30px;
+}
+.toDoList li span:hover {
+  background-color: rgba(220, 220, 220, 0.3);
+}
+.toDoList button {
+  padding: 0;
+  margin: 0;
+  min-width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border-radius: var(--size-infinite-radius);
+}
+.toDoList button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.toDoList button:active {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+/* ************************ */
+.form {
+  margin: 20px 0;
+}
+/* ************************ */
+.greeting {
+  font-size: 50px;
+  cursor: pointer;
+}
+.greeting:hover {
+  opacity: 0.66;
+}
+/* ************************ */
+.bgImg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: fadeIn 0.4s linear;
+}
+/* ************************ */
+.weather {
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: absolute;
+  left: var(--size-margin-weather);
+  bottom: var(--size-margin-weather);
+  color: gainsboro;
+}
+/* ************************ */
+button#clearButton {
+  width: 100%;
+  height: var(--size-height);
+  font-size: 120%;
+  font-weight: bold;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  border-radius: var(--size-infinite-radius);
+  color: gray;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+button#clearButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+button#clearButton:active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
