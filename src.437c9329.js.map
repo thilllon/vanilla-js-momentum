@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["document","title"],"mappings":";AAAAA,SAASC,MAAQ","file":"src.437c9329.js","sourceRoot":"..\\src","sourcesContent":["document.title = 'MOMENTUM';\r\n"]}
