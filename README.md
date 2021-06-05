@@ -33,7 +33,7 @@ It is built with vanilla JavaScript.
   - Update at **_./src/weather.js_**
 
   ```javascript
-  const WEATHER_API_KEY // enter issued API key
+  const WEATHER_API_KEY = ''; // enter issued API key
   ```
 
 - Install
