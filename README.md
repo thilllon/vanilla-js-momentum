@@ -30,7 +30,6 @@ It is built with vanilla JavaScript.
 - Preinstall
 
   - WEATHER_API_KEY is issued from [Open Weather Map](https://home.openweathermap.org/WEATHER_API_KEYs)
-  - https://gist.github.com/thilllon/653e9007cfb0d7094579093c4566c141
   - Update at **_./src/weather.js_**
 
   ```javascript
